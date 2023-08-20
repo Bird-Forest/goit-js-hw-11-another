@@ -15,16 +15,19 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button type="submit"></button>
     </form>
+    <div class="backdrop is-hidden"><span class="loader"></span></div>
     <div class="gallery">
       <!-- Картки зображень -->
     </div>
     <div class="target"></div>
-    <!-- <div class="footer">
-      <span class="message">Hello</span>
-    </div> -->
-    <button type="button" class="is-hidden load-more">Load more</button>
+    <div class="footer">
+      <p class="message"></p>
+    </div>
+    <button type="button" class="load-more">
+      <a href="#search-form"></a>
+    </button>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

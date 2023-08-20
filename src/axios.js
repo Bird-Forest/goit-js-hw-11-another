@@ -2,7 +2,7 @@ const axios = require('axios').default;
 
 let page = 1;
 
-export async function getGallery(word, page=1) {
+export async function getGallery(word, page) {
   try {
     const response = await axios.get('https://pixabay.com/api/', {
         params: {
