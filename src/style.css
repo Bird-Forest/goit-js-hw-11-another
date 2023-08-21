@@ -288,7 +288,7 @@ button[type='submit']:hover {
 }
 
 .message {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -298,6 +298,12 @@ button[type='submit']:hover {
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
+}
+
+@media screen and (min-width: 650px) {
+  .message {
+    font-size: 20px;
+  }
 }
 
 .target {
@@ -312,7 +318,7 @@ button[type='submit']:hover {
 .load-more {
   position: fixed;
   z-index: 101;
-  bottom: 10px;
+  bottom: 50px;
   right: 10px;
 
   width: 62px;
@@ -321,7 +327,7 @@ button[type='submit']:hover {
   background-color: #2373a9;
   background-image: url(./images/icons8-рука-вверх-64.png);
   background-size: cover;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
   border: 3px #216b9dcb solid;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -339,7 +345,7 @@ button[type='submit']:hover {
 
 @media screen and (min-width: 1310px) {
   .load-more {
-    bottom: 10px;
+    bottom: 50px;
     right: 100px;
   }
 }
